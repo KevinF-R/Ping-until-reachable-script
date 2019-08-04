@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Down detected @ - `date`";
+while ! ping -c1 google.com &>/dev/null;
+do
+sleep 1
+echo "Fail detected @ - `date`"; done ;
+echo "Host detected @ - `date`" ;
